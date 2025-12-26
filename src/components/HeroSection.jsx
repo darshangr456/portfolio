@@ -21,8 +21,7 @@ export const HeroSection=()=>{
 
            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in">Hi, I'm </span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">Darshan</span>
-            <span className="text-foreground ml-1 md:ml-2 opacity-0 animate-fade-in-delay-2">G R</span>
+            <span className="text-primary opacity-0 animate-fade-in-delay-1">Darshan G R</span>
             </h1> 
             
             <p className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground opacity-0 animate-fade-in-delay-2">
