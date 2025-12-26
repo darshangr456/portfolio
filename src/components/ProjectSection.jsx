@@ -24,34 +24,34 @@ const projects = [
 
 export const ProjectSection = () => {
     return (
-        <section id="projects" className="py-24 px-4 relative">
-            <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <section id="projects" className="section-container relative bg-white">
+            <div className="container mx-auto">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center text-foreground">
                     Featured <span className="text-primary">Projects</span>
                 </h2>
-                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    here are some of my recent projects each project was carefully crafted
-                    with attention to detail performance and user experience.
+                <p className="text-center text-muted-foreground mb-12 text-base md:text-lg">
+                    Here are some of my recent projects. Each project was carefully crafted
+                    with attention to detail, performance, and user experience.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 sm:gap-6 md:gap-8">
                     {projects.map((project, key) => (
                         <div key={key}
-                            className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
-                            <div className="h-48 overflow-hidden">
+                            className="group bg-white rounded-lg md:rounded-xl overflow-hidden shadow-lg card-hover border border-border/50 hover:shadow-2xl transition-all duration-300">
+                            <div className="h-40 sm:h-44 md:h-48 overflow-hidden">
                                 <img src={project.image} alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                             </div>
-                            <div className="p-6">
-                                <div className="flex flex-wrap gap-2 mb-4">
+                            <div className="p-4 sm:p-5 md:p-6">
+                                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                                     {project.tags.map((tag,key) => (
-                                         <span key={key} className="px-2 py-1 text-xs font-medium border border-gray-700 rounded-full bg-secondary text-secondary-foreground">
+                                         <span key={key} className="px-2 sm:px-3 py-0.5 sm:py-1 text-xs font-medium border border-border/50 rounded-full bg-primary/10 text-primary">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
                             
-                              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                              <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+                              <h3 className="text-lg sm:text-xl font-semibold mb-1">{project.title}</h3>
+                              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
                               <div className="flex justify-between items-center">
                                 <div className="flex space-x-3">
                                   <a href={project.demoUrl}

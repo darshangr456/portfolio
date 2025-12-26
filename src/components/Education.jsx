@@ -57,7 +57,7 @@ const EducationCard = ({ edu, index, isInView }) => {
 
   return (
     <motion.div
-      className="relative pl-8 md:pl-12 pb-12 group"
+      className="relative pl-6 sm:pl-8 md:pl-12 pb-8 sm:pb-10 md:pb-12 group"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={cardVariants}
@@ -74,46 +74,46 @@ const EducationCard = ({ edu, index, isInView }) => {
       
       {/* Timeline dot */}
       <motion.div 
-        className="absolute left-0 w-7 h-7 rounded-full bg-background border-2 border-primary flex items-center justify-center -translate-x-3.5 z-10"
+        className="absolute left-0 w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 rounded-full bg-background border-2 border-primary flex items-center justify-center -translate-x-2.5 sm:-translate-x-3 md:-translate-x-3.5 z-10"
         whileHover={{ scale: 1.1, boxShadow: '0 0 0 4px rgba(99, 102, 241, 0.3)' }}
         transition={{ type: 'spring', stiffness: 400, damping: 10 }}
       >
-        <div className="w-3 h-3 bg-primary rounded-full group-hover:scale-125 transition-transform duration-300"></div>
+        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-primary rounded-full group-hover:scale-125 transition-transform duration-300"></div>
       </motion.div>
       
-      <div className="bg-card/60 backdrop-blur-sm p-6 rounded-xl border border-border/50 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-primary/30 group-hover:-translate-y-1">
-        <div className="flex flex-col sm:flex-row gap-6">
+      <div className="bg-white p-4 sm:p-5 md:p-6 rounded-lg md:rounded-xl border border-border/50 shadow-md hover:shadow-xl transition-all duration-300 hover:border-primary/30 group-hover:-translate-y-1">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 md:gap-6">
           <div className="flex-shrink-0">
-            <div className="p-3 bg-primary/10 rounded-xl text-primary">
+            <div className="p-2 sm:p-2.5 md:p-3 bg-primary/10 rounded-lg md:rounded-xl text-primary">
               {edu.icon}
             </div>
           </div>
-          <div className="flex-1">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-              <h3 className="text-xl font-bold text-foreground">{edu.degree}</h3>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">
+          <div className="flex-1 min-w-0">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2 sm:mb-3">
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">{edu.degree}</h3>
+              <span className="inline-flex items-center gap-1.5 px-2 sm:px-3 py-0.5 sm:py-1 text-xs font-medium rounded-full bg-primary/10 text-primary whitespace-nowrap">
                 {edu.duration}
               </span>
             </div>
             
-            <div className="flex items-center text-muted-foreground text-sm mb-4">
+            <div className="flex items-center text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4">
               <span className="flex items-center gap-1.5">
                 {edu.institution}
               </span>
             </div>
             
-            <ul className="space-y-2 mb-4">
+            <ul className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
               {edu.description.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-foreground/90">
-                  <ChevronRight className="w-4 h-4 mt-1 flex-shrink-0 text-primary" />
+                <li key={i} className="flex items-start gap-2 text-foreground/90 text-xs sm:text-sm">
+                  <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 mt-0.5 sm:mt-1 flex-shrink-0 text-primary" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
             
-            <div className="flex items-center gap-2 px-4 py-2 bg-primary/5 text-primary rounded-lg border border-primary/10 w-fit">
-              <Award className="w-4 h-4 flex-shrink-0" />
-              <span className="text-sm font-medium">{edu.grade}</span>
+            <div className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/5 text-primary rounded-lg border border-primary/10 w-fit">
+              <Award className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+              <span className="text-xs sm:text-sm font-medium">{edu.grade}</span>
             </div>
           </div>
         </div>
@@ -129,18 +129,18 @@ export const Education = () => {
   });
 
   return (
-    <section id="education" className="py-20 px-4 md:px-8 bg-gradient-to-b from-background to-muted/5">
-      <div className="container mx-auto max-w-5xl">
+    <section id="education" className="section-container bg-white">
+      <div className="container mx-auto">
         <motion.div 
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-            Educational Journey
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center text-foreground">
+            Educational <span className="text-primary">Journey</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-center text-muted-foreground mb-12 text-base md:text-lg">
             My academic background and continuous learning path in the field of technology and beyond.
           </p>
         </motion.div>
