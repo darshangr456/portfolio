@@ -1,4 +1,4 @@
-import { ArrowDown, Mail, Phone, Download, Code } from "lucide-react";
+import { Mail, Phone, Download, Code } from "lucide-react";
 
 export const HeroSection=()=>{
     return (
@@ -21,8 +21,7 @@ export const HeroSection=()=>{
 
            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in">Hi, I'm </span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">Darshan</span>
-            <span className="text-foreground ml-1 md:ml-2 opacity-0 animate-fade-in-delay-2">G R</span>
+            <span className="text-primary opacity-0 animate-fade-in-delay-1">Darshan G R</span>
             </h1> 
             
             <p className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground opacity-0 animate-fade-in-delay-2">
@@ -37,7 +36,7 @@ export const HeroSection=()=>{
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 pt-4 opacity-0 animate-fade-in-delay-3">
               <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-lg md:rounded-xl border border-border/50 shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-primary">10+</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary">2+</div>
                 <div className="text-xs text-muted-foreground">Projects</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-lg md:rounded-xl border border-border/50 shadow-sm">
@@ -121,10 +120,5 @@ export const HeroSection=()=>{
            </div>
          </div>
       </div>
-      
-      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
-         <ArrowDown className="h-5 w-5 text-primary" />
-      </div> */}
     </section>);
 }

@@ -31,15 +31,7 @@
   }
  
 }
-@keyframes pulse-subtle {
-  0% ,100%{
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
- 
-}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -48,19 +40,6 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@keyframes meteor {
-  0% {
-    transform:   rotate(215deg) translateX(0);
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    transform:  rotate(215deg) translateX(-500px);
-    opacity: 0;
   }
 }
 
@@ -81,23 +60,7 @@
 
     --border: 214 32% 91%;
   }
-  .dark {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
-    --muted-foreground: 215 16% 47%;
-    --muted: 210 20% 96%;
-
-    --card: 0 0% 100%;
-    --secondary: 210 25% 97%;
-
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
-
-    --border: 214 32% 91%;
-  }
-  /* * {
-    @apply scroll-border;
-  } */
+  
   html {
     @apply scroll-smooth;
   }
@@ -156,16 +119,6 @@
 }
 .cosmic-button:hover {
   box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
-}
-
-@utility star {
-  @apply absolute rounded-full bg-white;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4)
-}
-
-@utility meteor {
-  @apply absolute bg-linear-to-r from-white via-white/50 to-transparent rounded-full ;
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3)
 }
 
 @utility section-title {
