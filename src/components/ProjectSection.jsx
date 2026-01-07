@@ -1,12 +1,13 @@
 import { Description } from "@radix-ui/react-toast"
 import { ArrowRight, ExternalLink, Github } from "lucide-react"
-
+import heartbeats from "../assets/projects/heartbeats.jpg"
+import portfolio from "../assets/projects/portfolio.png"
 const projects = [
     {
         id: 1,
         title: "Portfolio Website",
         description: "A responsive and modern personal portfolio built using React and Tailwind CSS. Designed UI components, smooth navigation, and mobile-first layouts to ensure a seamless user experience",
-        image: "projects/portfolio.png",
+        image: portfolio,
         tags: ["React", "Tailwind css"],
         // demoUrl: "#hero",
         githubUrl: "https://github.com/darshangr456/portfolio",
@@ -15,7 +16,7 @@ const projects = [
         id: 3,
         title: "Detection of CVD using Deep Neural Network",
         description: "Developed a deep learning model to classify five arrhythmia types using the MIT-BIH dataset. Achieved high accuracy with 1D CNN, 2D CNN, GRU, and LSTM architectures, improving reliability of ECG-based diagnosis.",
-        image: "projects/heartbeats.jpg",
+        image: heartbeats,
         tags: ["Python", "Deep learning"],
         // demoUrl: "https://github.com/darshangr456/CVD-Detection-DNN",
         githubUrl: "https://github.com/darshangr456/CVD-Detection-DNN",

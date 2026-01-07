@@ -1,4 +1,5 @@
 import { Mail, Phone, Download, Code } from "lucide-react";
+import Profileimg from "../assets/portfolioImage.png";
 export const HeroSection=()=>{
     return (
     <section id="hero" className="relative flex items-center justify-center pt-24 pb-16 md:pt-32 md:pb-24 section-container bg-gradient-to-br from-white via-gray-50 to-white">
@@ -78,7 +79,7 @@ export const HeroSection=()=>{
              <div className="absolute inset-0 rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl shadow-primary/20 group-hover:shadow-primary/30 transition-all duration-500 bg-gradient-to-br from-primary/10 to-transparent">
                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 z-10 mix-blend-overlay"></div>
                <img 
-                 src="../pictures/portfolioImage.png" 
+                 src={Profileimg} 
                  alt="Darshan G R - Frontend Developer" 
                  className="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700"
                />
