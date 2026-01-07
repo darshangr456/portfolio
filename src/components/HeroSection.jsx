@@ -25,7 +25,7 @@ export const HeroSection=()=>{
             </h1> 
             
             <p className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground opacity-0 animate-fade-in-delay-2">
-              Building Beautiful & Functional Web Experiences
+              Building Beautiful and Functional Web Experiences
             </p>
 
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground opacity-0 animate-fade-in-delay-3 leading-relaxed">
