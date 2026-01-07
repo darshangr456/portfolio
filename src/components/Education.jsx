@@ -4,39 +4,24 @@ import { useInView } from 'react-intersection-observer';
 
 const educationData = [
   {
-    degree: "Bachelor of Engineering in Computer Science",
-    institution: "Your University Name",
-    duration: "2020 - 2024",
-    description: [
-      "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems",
-      "Participated in various hackathons and coding competitions",
-      "Member of Computer Science Society"
-    ],
-    grade: "CGPA: 8.5/10",
+    degree: "Bachelor of Engineering in Electronics and Communication",
+    institution: "M S Ramaiah Institute of Technology",
+    duration: "2023 - 2025",
+    grade: "CGPA: 8.17/10",
     icon: <GraduationCap className="w-6 h-6 text-primary" />
   },
   {
-    degree: "Pre-University (12th Grade)",
-    institution: "Your College Name",
-    duration: "2018 - 2020",
-    description: [
-      "Major in Computer Science with Mathematics",
-      "Scored in top 5% of the state board examination",
-      "Active participant in science exhibitions"
-    ],
-    grade: "Percentage: 90%",
+    degree: "Diploma in Electronics and Communication",
+    institution: "Sri Jayachamarajendra Polytechnic",
+    duration: "2019 - 2022",
+    grade: "Percentage: 88.59%",
     icon: <BookOpen className="w-6 h-6 text-primary" />
   },
   {
     degree: "High School (10th Grade)",
-    institution: "Your School Name",
-    duration: "2017 - 2018",
-    description: [
-      "Specialization in Science and Mathematics",
-      "Awarded Best Student in Computer Science",
-      "Member of School's Tech Club"
-    ],
-    grade: "Percentage: 92%",
+    institution: "Kiran High School",
+    duration: "2018 - 2019",
+    grade: "Percentage: 97.44%",
     icon: <Award className="w-6 h-6 text-primary" />
   }
 ];
@@ -101,15 +86,6 @@ const EducationCard = ({ edu, index, isInView }) => {
                 {edu.institution}
               </span>
             </div>
-            
-            <ul className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
-              {edu.description.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-foreground/90 text-xs sm:text-sm">
-                  <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 mt-0.5 sm:mt-1 flex-shrink-0 text-primary" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
             
             <div className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/5 text-primary rounded-lg border border-primary/10 w-fit">
               <Award className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />

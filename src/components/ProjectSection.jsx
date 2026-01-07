@@ -8,8 +8,8 @@ const projects = [
         description: "A responsive and modern personal portfolio built using React and Tailwind CSS. Designed UI components, smooth navigation, and mobile-first layouts to ensure a seamless user experience",
         image: "projects/portfolio.png",
         tags: ["React", "Tailwind css"],
-        demoUrl: "#hero",
-        githubUrl: "#",
+        // demoUrl: "#hero",
+        githubUrl: "https://github.com/darshangr456/portfolio",
     },
     {
         id: 3,
@@ -17,7 +17,7 @@ const projects = [
         description: "Developed a deep learning model to classify five arrhythmia types using the MIT-BIH dataset. Achieved high accuracy with 1D CNN, 2D CNN, GRU, and LSTM architectures, improving reliability of ECG-based diagnosis.",
         image: "projects/heartbeats.jpg",
         tags: ["Python", "Deep learning"],
-        demoUrl: "https://github.com/darshangr456/CVD-Detection-DNN",
+        // demoUrl: "https://github.com/darshangr456/CVD-Detection-DNN",
         githubUrl: "https://github.com/darshangr456/CVD-Detection-DNN",
     },
 ]

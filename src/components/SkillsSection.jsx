@@ -3,18 +3,18 @@ import { useState } from "react";
 import { cn } from "../lib/utils";
 
 const skills = [
-    {name:"HTML/CSS", level:90, category:"frontend"},
-    {name:"JavaScript", level:85, category:"frontend"},
-    {name:"React.js", level:80, category:"frontend"},
-    {name:"TaiwindCSS", level:90, category:"frontend"},
+    {name:"HTML/CSS", level:75, category:"frontend"},
+    {name:"JavaScript", level:70, category:"frontend"},
+    {name:"React.js", level:65, category:"frontend"},
+    {name:"TaiwindCSS", level:65, category:"frontend"},
 
-    {name:"MySQL", level:85, category:"backend"},
+    {name:"MySQL", level:75, category:"backend"},
 
-    {name:"Python", level:85, category:"programming language"},
-    {name:"C/C++", level:80, category:"programming language"},
+    {name:"Python", level:75, category:"programming language"},
+    {name:"C/C++", level:70, category:"programming language"},
 
-    {name:"Git/GitHub", level:90, category:"tools"},
-    {name:"VS Code", level:95, category:"tools"},
+    {name:"Git/GitHub", level:85, category:"tools"},
+    {name:"VS Code", level:90, category:"tools"},
 ];
 
 const categories=["all", "frontend", "programming language", "tools"];
