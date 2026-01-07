@@ -79,7 +79,7 @@ export const HeroSection=()=>{
              <div className="absolute inset-0 rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl shadow-primary/20 group-hover:shadow-primary/30 transition-all duration-500 bg-gradient-to-br from-primary/10 to-transparent">
                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 z-10 mix-blend-overlay"></div>
                <img 
-                 src="/pictures/portfolioImage.png" 
+                 src={"/pictures/portfolioImage.png"} 
                  alt="Darshan G R - Frontend Developer" 
                  className="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700"
                />
